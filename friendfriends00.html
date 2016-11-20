@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body onload="locationconsent()">
+    <!-- see all friends by location -->
+    <div id="friendgrid" onload="getFriends()">
+      <div class="friendsquare">
+        <a href="friendprofile00.html">
+          <img src="tempfriendo.png"/>
+          <div>NAME</div>
+          <div>1 mile</div>
+        </a>
+      </div>
+    </div>
+    <!-- filter friends options -->
+    <div id="friendfilter">
+      Find friends with certain skills:
+      <form id="filters">
+        <input type="checkbox" value="filter1"> Filter 1
+        <input type="checkbox" value="filter2"> Filter 2
+        <input type="checkbox" value="filter3"> Filter 3
+      </form>
+    </div>
+  </body>
+  <script>
+  function locationconsent(){
+    window.alert("This page is using your location, for more information see our privacy policy");
+  }
+  function getFriends(){
+    //ask database for profiles of friends in your area
+    //return profiles and pass in variables (distance, name, profile picture)
+  }
+  </script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="sjms.css"></link>
+  </head>
+  <body>
+    <!-- link to about page -->
+    <a href="aboutpage00.html" alt="About">About</a>
+    <!-- call emergency numbers -->
+    <a href"#" alt="Call Emergency Numbers" id="call">
+      <img src="tempphoneicon.jpg" class="icon" />
+    </a>
+
+    <!-- find friends in your area -->
+    <a href="./friendfriends00.html" alt="Find Friends" id="find">
+      <img src="tempfriendicon.png" class="icon"/>
+    </a>
+  </body>
+  <script>
+  //call emergency numbers popup
+  $("#call").one("click", function(){
+    var callbox = $("<div></div>").addClass("modal").attr("id", "callbox");
+    var callboxtext = $("<div></div>").text("You have not set any emergency numbers, do you want to call 911?").addClass("modaltext");
+    var call911 = $("<a></a>").text("Yes, call police").addClass("modalbutton").attr("id", "call911").attr("href", "#").attr("onclick", "call911()");
+    var setcontacts = $("<a></a>").text("Set emergency contacts").addClass("modalbutton").attr("id", "setcontacts").attr("href", "#").attr("onclick", "closemodal()");
+    var close = $("<a></a>").text("Close").addClass("modalbutton").attr("id", "close").attr("href", "#").attr("onclick", "closemodal()");
+    callbox.append(callboxtext);
+    callboxtext.append(call911).append(setcontacts).append(close);
+    $("#call").append(callbox);
+  });
+  function call911(){
+    window.alert("911 is being called");
+    closemodal();
+  }
+  function setcontacts(){
+    //form opens to input contact phone numbers
+    //locally store phone numbers
+    closemodal();
+  }
+  function closemodal(){
+    window.location.reload();
+  }
+
+  </script>
+</html>

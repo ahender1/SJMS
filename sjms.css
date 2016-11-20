@@ -1,0 +1,59 @@
+.modal{
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+}
+.modaltext{
+  background-color: red;
+  margin: 15% auto;
+  padding: 100px;
+  border: 1px solid black;
+  width: 50%;
+}
+.modalbutton{
+  color: blue;
+  background-color: white;
+  display: block;
+}
+.hidden{
+  display: none;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.icon{
+  width: 30%;
+  height: 30%;
+  display: block;
+}
+#friendfilter{
+  background-color: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#filters input{
+  display: block;
+}
+#friendgrid{
+  width: 100%;
+  height: 100%;
+}
+.friendsquare{
+  width: 20%;
+  height: 20%;
+  display: inline-block;
+}
+.friendsquare img{
+  width: 5%;
+  height: 5%;
+}
+.friendsquare a{
+  text-decoration: none;
+  cursor: pointer;
+}
