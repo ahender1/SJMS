@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="sjms.css"></link>
+  </head>
+  <body onload="locationconsent()">
+    <div id="navigation">
+      <div id="header">
+        Safe Journeys
+      </div>
+      <!-- link to about page -->
+      <div id="aboutlink">
+        <a href="aboutpage00.html" alt="About">About</a>
+      </div>
+      <!-- go to user page -->
+      <div id="userpage">
+        <a href="userpage00.html" alt="User page">User Services</a>
+      </div>
+      <!-- sign in as an ally -->
+      <div id="signin">
+        <a href="signin00.html" alt="Sign in">
+          Sign In
+        </a>
+      </div>
+    </div>
+    <div class="content">
+      <!-- see all allies by location -->
+      <div id="allygrid" onload="getallies()">
+        <div class="allysquare">
+          <a href="allyprofile00.html">
+            <img src="tempally.png"/>
+            <div>NAME</div>
+            <div>1 mile</div>
+          </a>
+        </div>
+        <div class="allysquare">
+          <a href="allyprofile00.html">
+            <img src="tempally.png"/>
+            <div>NAME</div>
+            <div>1 mile</div>
+          </a>
+        </div><div class="allysquare">
+          <a href="allyprofile00.html">
+            <img src="tempally.png"/>
+            <div>NAME</div>
+            <div>1 mile</div>
+          </a>
+        </div>
+        <div class="allysquare">
+          <a href="allyprofile00.html">
+            <img src="tempally.png"/>
+          <div>NAME</div>
+          <div>1 mile</div>
+          </a>
+        </div>
+      </div>
+      <!-- filter allies options -->
+      <div id="allyfilter">
+        Find allies with certain skills:
+        <form id="filters">
+          <input type="checkbox" value="filter1"> Filter 1
+          <input type="checkbox" value="filter2"> Filter 2
+          <input type="checkbox" value="filter3"> Filter 3
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+  function locationconsent(){
+    var locationbox = $("<div></div>").addClass("modal").attr("id", "locationbox");
+    var locationboxtext = $("<div></div>").text("This page is using your location. For additional information please see our privacy policy on aboutpage00.html").addClass("modaltext");
+    var locationconsent = $("<a></a>").text("OK").addClass("modalbutton").attr("id", "locationconsent").attr("href", "#").attr("onclick", "closemodal()");
+    var close = $("<a></a>").text("Close").addClass("modalbutton").attr("id", "close").attr("href", "#").attr("onclick", "closemodal()");
+    locationbox.append(locationboxtext);
+    locationboxtext.append(locationconsent).append(close);
+    $(".content").append(locationbox);
+  }
+    function closemodal(){
+      $("#locationbox").remove();
+  }
+  function getallies(){
+    //ask database for profiles of allies in your area
+    //return profiles and pass in variables (distance, name, profile picture)
+  }
+  </script>
+</html>
