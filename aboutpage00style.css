@@ -1,0 +1,22 @@
+#header{
+  font-size: 30px;
+  background-color: grey;
+  display: inline-block;
+  width: 100%;
+}
+#mission{}
+#beally{}
+#training{}
+#report{}
+#privacy{}
+.aboutheader{
+  font-size: 20px;
+  color:blue;
+  background-color: white;
+}
+.abouttext{
+  width: 80%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: white;
+}

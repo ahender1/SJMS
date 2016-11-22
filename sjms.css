@@ -1,3 +1,14 @@
+body{
+  margin: 0px;
+  background-color: lightgray;
+}
+a{
+  text-decoration: none;
+  color: blue;
+}
+.content{
+  padding: 5%;
+}
 .modal{
   position: fixed;
   z-index: 1;
@@ -5,76 +16,56 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: grey;
+  background-color: lightgrey;
 }
 .modaltext{
-  background-color: red;
-  margin: 15% auto;
-  padding: 100px;
+  background-color: grey;
+  margin: 10%;
   border: 1px solid black;
-  width: 50%;
+  width: auto%;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
 }
 .modalbutton{
   color: blue;
+  text-decoration: none;
   background-color: white;
   display: block;
-}
-.hidden{
-  display: none;
-}
-a{
-  text-decoration: none;
-  cursor: pointer;
-}
-.icon{
-  width: 30%;
-  height: 30%;
-  display: block;
-}
-#filters input{
-  display: block;
-}
-#allygrid{
-  width: 100%;
-  height: 100%;
-}
-.allysquare{
-  width: 20%;
-  height: 20%;
-  display: inline-block;
-  text-align: center;
-}
-.allysquare img{
-  width: 30%;
-  height: 30%;
-}
-.allysquare a{
-  text-decoration: none;
-}
-.abouttext{
-  width: 80%;
-  padding: 10%;
-  margin: 5%;
-  background-color: grey;
-}
-.signinput{
-  height: 30px;
-  width: 50px;
-  border-color: black;
-  border-width: 1px;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid blue;
+  border-radius: 10px;
 }
 #navigation{
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 2%;
+  height: auto;
   background-color: grey;
-  padding: 50px;
+  z-index: 1;
 }
-.content{
-  position: relative;
-  top: 200px;
-  left: 0px;
-  /*overflow: scroll;*/
+.navlink{
+  background-color: white;
+  display: inline-block;
+  text-decoration: none;
+  width: 29%;
+  text-align: center;
+  margin: 1%;
+  border-radius: 10px;
+  border: 1px solid blue;
+}
+.navlinkicon{
+  max-width: 33%;
+  max-height: 33%;
+  display: block;
+  margin-left: 33%;
+  background-color:white;
+}
+.navlink a{
+  text-decoration: none;
+}
+.hidden{
+  display: none;
 }

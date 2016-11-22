@@ -2,23 +2,28 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
-    </script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+    </script> -->
     <link rel="stylesheet" href="sjms.css"></link>
+    <link rel="stylesheet" href="signin00style.css"></link>
     </head>
     <body>
       <div id="navigation">
-        <div id="header">
-          Safe Journeys
-        </div>
         <!-- link to about page -->
-        <div id="aboutlink">
-          <a href="aboutpage00.html" alt="About">About</a>
-        </div>
+          <a href="aboutpage00.html" alt="About" class="navlink">
+            About
+            <img src="tempabouticon.png" alt="About" class="navlinkicon" />
+          </a>
         <!-- go to user page -->
-        <div id="userpage">
-          <a href="userpage00.html" alt="User page">User Services</a>
-        </div>
+          <a href="userpage00.html" alt="User page" class="navlink">
+            User Services
+            <img src="tempallyicon.png" alt="User services" class="navlinkicon"/>
+          </a>
+        <!-- sign in as an ally -->
+          <a href="signin00.html" alt="Sign in" class="navlink">
+            Sign In
+            <img src="tempally.png" alt="Sign in" class="navlinkicon"/>
+          </a>
       </div>
       <div class="content">
         <div id="username">
@@ -29,8 +34,8 @@
           <input type="text" placeholder="password" class="signinput">
           </input>
         </div>
-        <div id="signin">
-          <a href="allyprofile00.html" alt="Sign in">
+        <div id="signinbutton">
+          <a href="aboutpage00.html" alt="Sign in">
             Sign In
           </a>
         </div>

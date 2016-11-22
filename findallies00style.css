@@ -1,0 +1,36 @@
+#allygrid{
+  margin-top: 5%;
+  position: absolute;
+  top: 10%;
+  padding-bottom: 20%;
+}
+.allysquare{
+  width: 30%;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+}
+.allysquare a{
+  text-decoration: none;
+}
+.allyname{
+  font-size:16px;
+  margin-top: 2px;
+}
+.allylocation{
+  font-size:14px;
+  margin-bottom:5px;
+}
+.allypic{
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: white;
+}
+#allyfilter{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: grey;
+  width: 100%;
+}

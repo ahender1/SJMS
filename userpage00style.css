@@ -1,0 +1,19 @@
+.userservice{
+  font-size: 30px;
+  margin: 10px;
+  margin-top:30px;
+  text-align: center;
+}
+.icon{
+  height:70px;
+  width:70px;
+  margin: 5%;
+  border: 1px solid blue;
+  border-radius: 20px;
+  background-color: white;
+  padding:10px;
+  }
+  #finder{
+    font-size: 30px;
+  }
+  #find{}

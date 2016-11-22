@@ -5,41 +5,50 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
     </script>
     <link rel="stylesheet" href="sjms.css"></link>
+    <link rel="stylesheet" href="userpage00style.css"></link>
   </head>
   <body>
     <div id="navigation">
-      <div id="header">
-        Safe Journeys
-      </div>
       <!-- link to about page -->
-      <div id="aboutlink">
-        <a href="aboutpage00.html" alt="About">About</a>
-      </div>
-      <!-- sign in as an ally -->
-      <div id="signin">
-        <a href="signin00.html" alt="Sign in">
-          Sign In
+        <a href="aboutpage00.html" alt="About" class="navlink">
+          About
+          <img src="tempabouticon.png" alt="About" class="navlinkicon" />
         </a>
-      </div>
+      <!-- go to user page -->
+        <a href="userpage00.html" alt="User page" class="navlink">
+          User Services
+          <img src="tempallyicon.png" alt="User services" class="navlinkicon"/>
+        </a>
+      <!-- sign in as an ally -->
+        <a href="signin00.html" alt="Sign in" class="navlink">
+          Sign In
+          <img src="tempally.png" alt="Sign in" class="navlinkicon"/>
+        </a>
     </div>
     <div class="content">
       <!-- call emergency numbers -->
-      <a href"#" alt="Call Emergency Numbers" id="call">
-        Call Emergency Numbers
-        <img src="tempphoneicon.jpg" class="icon" />
-      </a>
+      <div id="emergency" class="userservice">
+        <a href"#" alt="Call Emergency Numbers" id="call">
+          Call Emergency Numbers
+          <br>
+          <img src="tempphoneicon.png" class="icon" />
+        </a>
+      </div>
       <!-- find allies in your area -->
-      <a href="./findallies00.html" alt="Find allies" id="find">
-        Find Allies
-        <img src="tempallyicon.png" class="icon"/>
-      </a>
+      <div id="finder" class="userservice">
+        <a href="./findallies00.html" alt="Find allies" id="find">
+          Find Allies
+          <br>
+          <img src="tempallyicon.png" class="icon"/>
+        </a>
+      </div>
     </div>
   </body>
   <script>
   //call emergency numbers popup
   $("#call").one("click", function(){
     var callbox = $("<div></div>").addClass("modal").attr("id", "callbox");
-    var callboxtext = $("<div></div>").text("You have not set any emergency numbers, do you want to call 911?").addClass("modaltext");
+    var callboxtext = $("<div></div>").text("You have not set any emergency numbers. Do you want to call 911?").addClass("modaltext");
     var call911 = $("<a></a>").text("Yes, call police").addClass("modalbutton").attr("id", "call911").attr("href", "#").attr("onclick", "call911()");
     var setcontacts = $("<a></a>").text("Set emergency contacts").addClass("modalbutton").attr("id", "setcontacts").attr("href", "#").attr("onclick", "closemodal()");
     var close = $("<a></a>").text("Close").addClass("modalbutton").attr("id", "close").attr("href", "#").attr("onclick", "closemodal()");

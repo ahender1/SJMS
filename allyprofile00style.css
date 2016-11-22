@@ -1,0 +1,49 @@
+#allypic{
+  position: relative;
+  float: right;
+  display: inline;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.profpic{
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: white;
+}
+#name{
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 30px;
+}
+#location{
+  margin-left: 10px;
+  font-size: 20px;
+}
+#rating{
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+#skills{
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+ul{
+  font-size: medium;
+  padding-left: 20px;
+}
+#contact{
+  font-size: 20px;
+  padding: 10px;
+}
+.contacticon{
+  height:70px;
+  width:70px;
+  margin: 5%;
+  border: 1px solid blue;
+  border-radius: 20px;
+  background-color: white;
+  padding:10px;
+}

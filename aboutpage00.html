@@ -5,50 +5,70 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
     </script>
     <link rel="stylesheet" href="sjms.css"></link>
+    <link rel="stylesheet" href="aboutpage00style.css"></link>
   </head>
   <body>
     <div id="navigation">
+      <!-- link to about page -->
+        <a href="aboutpage00.html" alt="About" class="navlink">
+          About
+          <img src="tempabouticon.png" alt="About" class="navlinkicon" />
+        </a>
+      <!-- go to user page -->
+        <a href="userpage00.html" alt="User page" class="navlink">
+          User Services
+          <img src="tempallyicon.png" alt="User services" class="navlinkicon"/>
+        </a>
+      <!-- sign in as an ally -->
+        <a href="signin00.html" alt="Sign in" class="navlink">
+          Sign In
+          <img src="tempally.png" alt="Sign in" class="navlinkicon"/>
+        </a>
+    </div>
+    <div class="content">
       <div id="header">
         Safe Journeys
       </div>
-      <!-- link to about page -->
-      <div id="aboutlink">
-        <a href="aboutpage00.html" alt="About">About</a>
-      </div>
-      <!-- go to user page -->
-      <div id="userpage">
-        <a href="userpage00.html" alt="User page">User Services</a>
-      </div>
-      <!-- sign in as an ally -->
-      <div id="signin">
-        <a href="signin00.html" alt="Sign in">
-          Sign In
-        </a>
-      </div>
-    </div>
-    <div class="content">
       <!-- //mission statement -->
       <div id="mission" class="abouttext">
-        Mission Statement
+        <span class="aboutheader">Mission Statement</span>
+        <div class="hidden">
+          Lorem ipsum dolor sit amet, has id doctus posidonium, mea ad idque saepe. Vim quod invenire cu, ne sea etiam veniam indoctum. Inani signiferumque vix an, no cum iracundia theophrastus. Ea est bonorum assueverit, quo no deleniti maiestatis. Est ne partem eirmod consectetuer. Ius possit molestie consectetuer te, putant dissentias ex has, eos case scripserit ut.
+        </div>
       </div>
       <!-- //how become an ally -->
       <div id="beally" class="abouttext">
-        How To Become An Ally
+        <span class="aboutheader">How To Become An Ally</span>
+        <div class="hidden">
+          Lorem ipsum dolor sit amet, has id doctus posidonium, mea ad idque saepe. Vim quod invenire cu, ne sea etiam veniam indoctum. Inani signiferumque vix an, no cum iracundia theophrastus. Ea est bonorum assueverit, quo no deleniti maiestatis. Est ne partem eirmod consectetuer. Ius possit molestie consectetuer te, putant dissentias ex has, eos case scripserit ut.
+        </div>
       </div>
       <!-- //conflict resolution/training materials -->
       <div id="training" class="abouttext">
-        Conflict Resolution/Training Materials
+        <span class="aboutheader">Conflict Resolution/Training Materials</span>
+        <div class="hidden">
+          Lorem ipsum dolor sit amet, has id doctus posidonium, mea ad idque saepe. Vim quod invenire cu, ne sea etiam veniam indoctum. Inani signiferumque vix an, no cum iracundia theophrastus. Ea est bonorum assueverit, quo no deleniti maiestatis. Est ne partem eirmod consectetuer. Ius possit molestie consectetuer te, putant dissentias ex has, eos case scripserit ut.
+        </div>
       </div>
       <!-- //report abuse -->
       <div id="report" class="abouttext">
-        Report Abuse
+        <span class="aboutheader">Report Abuse</span>
+        <div class="hidden">
+          Lorem ipsum dolor sit amet, has id doctus posidonium, mea ad idque saepe. Vim quod invenire cu, ne sea etiam veniam indoctum. Inani signiferumque vix an, no cum iracundia theophrastus. Ea est bonorum assueverit, quo no deleniti maiestatis. Est ne partem eirmod consectetuer. Ius possit molestie consectetuer te, putant dissentias ex has, eos case scripserit ut.
+        </div>
       </div>
       <!-- //privacy policy -->
       <div id="privacy" class="abouttext">
-        Privacy Policy
+        <span class="aboutheader">Privacy Policy</span>
+        <div class="hidden">
+          Lorem ipsum dolor sit amet, has id doctus posidonium, mea ad idque saepe. Vim quod invenire cu, ne sea etiam veniam indoctum. Inani signiferumque vix an, no cum iracundia theophrastus. Ea est bonorum assueverit, quo no deleniti maiestatis. Est ne partem eirmod consectetuer. Ius possit molestie consectetuer te, putant dissentias ex has, eos case scripserit ut.
+        </div>
       </div>
     </div>
   </body>
   <script>
+    $(".abouttext").on("click", function(){
+      $(this).children("div").toggleClass("hidden");
+    });
   </script>
 </html>
