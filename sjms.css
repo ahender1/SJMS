@@ -1,13 +1,18 @@
 body{
   margin: 0px;
-  background-color: lightgray;
+  background-color: #d7e8e2;
+  font-family: Monofur, Monaco, monospace;
 }
 a{
   text-decoration: none;
   color: blue;
 }
 .content{
-  padding: 5%;
+  padding: 2%;
+  background-color: #b2c7ce;
+  border-radius: 5px;
+  margin: 15%;
+  
 }
 .modal{
   position: fixed;
@@ -43,9 +48,20 @@ a{
   left: 0;
   width: 100%;
   height: auto;
-  background-color: grey;
+  background-color: #739193;
   z-index: 1;
 }
+#pforeground{
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background-color: #c6c8b2;
+  border-radius: 5px;
+  z-index: -1;
+}
+
 .navlink{
   background-color: white;
   display: inline-block;

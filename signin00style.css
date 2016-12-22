@@ -1,23 +1,69 @@
-#username{
-  margin-top: 150px;
-}
+#username{}
 #password{}
 .signinput{
-  height: 40px;
+  height: 20px;
   width: 200px;
   margin: 10px;
-  font-size: 30px;
+  font-size: 20px;
   padding: 10px;
   box-shadow: 1px 1px grey;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
-#signinbutton{
+#loginbutton{
   background-color: white;
-  font-size: 30px;
+  font-size: 20px;
   display: inline-block;
   margin: 10px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid blue;
 }
+
+#logintext{
+  padding: 10px;
+  font-size: 30px;
+}
+
+#signuptext{
+  font-size: 15px;
+  padding: 10px;
+}
+
+.content{
+  text-align: center;
+  margin-top: 20%;
+}
+
+.vertbar{
+  position: absolute;
+  background-color: #739193;
+  left: 10%;
+  top: 0px;
+  width: 6px;
+  height: 100%;
+  z-index: 0;
+}
+
+.horbar1{
+  position: absolute;
+  background-color: #739193;
+  top: 7%;
+  left: 0px; 
+  height: 6px;
+  width: 100%;
+  z-index: 0;
+}
+  
+.horbar2{
+  position: absolute;
+  background-color: #739193;
+  top: 10%;
+  left: 0px; 
+  height: 6px;
+  width: 100%;
+  z-index: 0;
+}
+  
+  
+  
