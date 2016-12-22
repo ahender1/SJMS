@@ -52,7 +52,7 @@ a{
   z-index: 1;
 }
 #pforeground{
-  position: fixed;
+  position: absolute;
   top: 5%;
   left: 5%;
   width: 90%;
